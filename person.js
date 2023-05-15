@@ -1,17 +1,29 @@
+const moment = require("moment");
+
 class Person {
-	#category;
+	#type;
 	#name;
 	#lastName;
 	#age;
+	#createdAt;
 
 	static #counter = 0;
 
-	constructor(category, name, lastName, age) {
-		this.#category = category;
+	constructor(type, name, lastName, age) {
+		this.#type = type;
 		this.#name = name;
 		this.#lastName = lastName;
 		this.#age = age;
+		this.#createdAt = moment().format("YYYY-MM-DD HH:mm");
 		Person.counter++;
+	}
+
+	get createdAt() {
+		return this.#createdAt;
+	}
+
+	set createdAt(createdAt) {
+		console.log(`Koreguoti ${createdAt} negalima`);
 	}
 
 	static get counter() {
@@ -22,16 +34,16 @@ class Person {
 		Person.#counter = counter;
 	}
 
-	get category() {
-		return this.#category;
+	get type() {
+		return this.#type;
 	}
 
-	set category(category) {
-		console.log(`Cant change ${category}`);
+	set type(type) {
+		console.log(`Cant change ${type}`);
 	}
 
 	get name() {
-		return `[${this.#name}]`;
+		return this.#name;
 	}
 
 	set name(name) {
@@ -40,13 +52,13 @@ class Person {
 		);
 	}
 
-	get lastname() {
+	get lastName() {
 		return this.#lastName;
 	}
 
-	set lastname(lastname) {
+	set lastName(lastName) {
 		console.log(
-			`Pavarde nebuvo pakeistas i '${lastname}'. Pavardes keitimas nera galimas`
+			`Pavarde nebuvo pakeistas i '${lastName}'. Pavardes keitimas nera galimas`
 		);
 	}
 
@@ -56,6 +68,12 @@ class Person {
 
 	set age(age) {
 		this.#age = age;
+	}
+
+	getInfo() {
+		return `Person is: ${this.#type}, name: ${this.#name}, last name is: ${
+			this.#lastName
+		}, and age is: ${this.#age}.`;
 	}
 }
 

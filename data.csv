@@ -1,10 +1,10 @@
-Table 1
-Asmens tipas,Vardas,Pavarde,Amzius,ID,Universitetas,Alga
-Mokinys,Petras,Petrauskas,20,223345,VGTU,
-Mokinys,Jonas,Jonaitis,23,338810,KTU,300
-Mokinys,Tadas,Tadelis,21,982273,VU,200
-Mokinys,Audrius,Bejeris,37,850714,LEU,100
-Mokinys,Juozas,Juozapaitis,29,931123,VGTU,400
+type,name,lastName,age,id,university,salary
+Mokinys,Petras,Petrauskas,20,223345,VGTU
+Mokinys,Jonas,Jonaitis,23,338810,KTU
+Mokinys,Tadas,Tadelis,21,982273,VU
+Mokinys,Audrius,Bejeris,37,850714,LEU
+Mokinys,Juozas,Juozapaitis,29,931123,VGTU
+Mokinys,Aloyzas,Sakalas,77,777777,VU
 Mokytojas,Antanas,Antanaitaitis,58,672309,VU,2000
 Mokytojas,Rokas,Merkys,45,762129,VGTU,2500
 Mokytojas,Mantas,Nacevicius,35,872990,VU,1500

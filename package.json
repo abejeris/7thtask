@@ -1,27 +1,33 @@
 {
-  "name": "7uzduotis",
-  "version": "1.0.0",
-  "description": "app about checking csv file and creating list",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Audrius Bejeris",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/abejeris/7thtask.git"
-  },
-  "keywords": [
-    "csv",
-    "list",
-    "format"
-  ],
-  "bugs": {
-    "url": "https://github.com/abejeris/7thtask/issues"
-  },
-  "homepage": "https://github.com/abejeris/7thtask#readme",
-  "dependencies": {
-    "nodemon": "^2.0.22"
-  }
+	"name": "7uzduotis",
+	"version": "1.0.0",
+	"description": "app about checking csv file and creating list",
+	"main": "app.js",
+	"scripts": {
+		"dev": "nodemon app.js",
+		"start": "node app.js",
+		"test": "paleisti testus"
+	},
+	"author": "Audrius Bejeris",
+	"license": "ISC",
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/abejeris/7thtask.git"
+	},
+	"keywords": [
+		"csv",
+		"list",
+		"format"
+	],
+	"bugs": {
+		"url": "https://github.com/abejeris/7thtask/issues"
+	},
+	"homepage": "https://github.com/abejeris/7thtask#readme",
+	"dependencies": {
+		"console-table-printer": "^2.11.1",
+		"console-table-printer-extend": "^1.1.2",
+		"csv-parser": "^3.0.0",
+		"moment": "^2.29.4",
+		"nodemon": "^2.0.22"
+	}
 }
