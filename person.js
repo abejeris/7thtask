@@ -22,10 +22,6 @@ class Person {
 		return this.#createdAt;
 	}
 
-	set createdAt(createdAt) {
-		console.log(`Koreguoti ${createdAt} negalima`);
-	}
-
 	static get counter() {
 		return Person.#counter;
 	}
